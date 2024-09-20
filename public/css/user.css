@@ -1,0 +1,481 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: var(--sg-fontbrand);
+}
+.web-post .head-user .scroll-x .icon-ra img{
+    border-radius: 16px;
+    border: none;
+}
+.web-post ul{
+    margin: 0 auto;
+}
+.user-post-body > ul > li{
+    border-radius: 0px;
+}
+.user-post .head{
+    padding: 0.8rem 0rem;
+}
+.user-post .post-img{
+    margin: 0.8rem 0rem;
+    margin-top: 0rem;
+}
+.user-post .post-des{
+    margin: 1rem 0.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.user-post .post-foot a{
+    margin: 0rem 0.3rem;
+}
+
+/* ==============================this is monk infor===============> */
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: var(--sg-fontbrand);
+}
+.monk-infor {
+    max-width: 500px;
+    height: max-content;
+    position: sticky;
+    top: 70px;
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+    width: 0rem;
+    border-radius: 10px;
+    opacity: 0;
+}
+.monk-infor-body {
+    max-height: 88vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.monk-infor-active {
+    width: auto;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+    opacity: 1;
+}
+.monk-infor-body .monk-head {
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.monk-infor-body .monk-head .btn-close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 2;
+}
+.monk-infor-body .monk-head .btn-close .icon {
+    background: rgb(0 0 0 / 38%);
+}
+.monk-infor-body .user-cover {
+    display: block;
+    margin: 0 auto;
+}
+.monk-infor-body .user-cover .box {
+    overflow: hidden;
+}
+.monk-infor-body .user-profile {
+    width: 7.5rem;
+    height: 7.5rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    margin-top: -5rem;
+    margin-left: 0.8rem;
+    box-sizing: border-box;
+    border: 4px solid var(--sg-bglight);
+    position: relative;
+    z-index: 5;
+}
+.monk-infor-body .monk-head .text h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.monk-infor-body .monk-head .text h2::after{
+    left: calc(100% + 8px);
+}
+.monk-infor-body .monk-head .text > p {
+    font-size: 0.8rem;
+    color: var(--sg-color-spece);
+}
+.monk-infor-body .monk-head .text blockquote p {
+    font-size: 1rem;
+}
+.infor-section {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.infor-section .head {
+    margin: 0 0.5rem;
+}
+.infor-section-border {
+    border: none;
+}
+.infor-section-border .head {
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-color: var(--sg-border-00);
+}
+.infor-section-border .head ul {
+    width: initial;
+    margin: 0 0.5rem;
+}
+.infor-section .head > ul {
+    width: 100%;
+    height: 50px;
+}
+.infor-section .head h2 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+.infor-section .head .btn-add-photo {
+    width: 5rem;
+    height: 2rem;
+    border: 1px solid var(--sg-border-00);
+    background: none;
+    padding: 0rem;
+    border-radius: 50rem;
+    cursor: pointer;
+    background: var(--sg-bglight);
+}
+.infor-section .head .btn-add-photo i {
+    color: #7ddd7d;
+}
+.infor-section .head .btn-add-photo h2 {
+    margin-left: 0.3rem;
+}
+.infor-section .head .btn-out {
+    padding: 0.8rem 0.5rem;
+    padding-top: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 0;
+    font-weight: 550;
+    color: var(--sg-mainColor-yellow);
+    outline-color: var(--sg-mainColor-yellow);
+}
+.infor-section .head p {
+    font-size: 0.6rem;
+    color: var(--sg-color-spece);
+}
+.personal_intro > .box ul {
+    margin-top: 0.5rem;
+}
+.personal_intro > .box ul li {
+    display: flex;
+    align-items: center;
+}
+.personal_intro > .box ul li .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: var(--sg-color-spece);
+}
+.personal_intro > .box ul li .i-wifi i{
+    rotate: 56deg;
+}
+.personal_intro > .box ul li p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--sg-fontbrand);
+    color: var(--fds-gray-00);
+}
+#personal_card > .box ul {
+    margin-top: 0.5rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    align-items: initial;
+    scroll-snap-type: x mandatory;
+}
+#personal_card > .box ul::-webkit-scrollbar {
+    display: none;
+}
+/* ===============================this is ===================== ----- */
+/* .web-header {
+  backdrop-filter: blur(15px);
+  background: #ffffff80;
+} */
+main {
+    margin: 0 0.5rem;
+}
+main > .con {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.monk-infor {
+    width: 100%;
+    overflow: initial;
+    position: initial;
+    height: auto;
+    max-height: max-content;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    opacity: 1;
+    border-radius: 0px;
+    max-width: initial;
+}
+.monk-infor-body {
+    height: max-content;
+    overflow: initial;
+    max-height: max-content;
+}
+.monk-infor-body .user-profile {
+    margin-top: -4.2rem;
+}
+.monk-infor-body .user-profile .box{
+    width: 100%;
+    height: 100%;
+}
+.monk-infor-body .user-cover {
+    width: 100%;
+}
+.monk-infor-body .user-cover .box {
+    max-height: 500px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+.monk-infor-body .user-cover .btn-edite-profile {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+.monk-infor-body .user-cover .btn-edite-profile a {
+    background: var(--sg-bglight);
+    border-radius: 7px;
+    line-height: 0;
+    font-weight: 600;
+    padding: 0.5rem 0.6rem;
+    color: var(--sg-mainColor-yellow);
+    font-size: 0.9rem;
+}
+.monk-infor-body .user-cover .btn-edite-profile a i {
+    margin: 0rem 0.2rem;
+}
+#personal_photo > .box > ul {
+    display: block;
+    margin: 0 auto;
+    column-gap: 0.5rem;
+    column-count: 4;
+    max-width: 100%;
+    grid-template-columns: initial;
+}
+#personal_photo > .box > ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    break-inside: avoid;
+}
+#personal_photo > .box > ul .user-profile-sm {
+    display: flex;
+    z-index: 1000;
+    position: initial;
+}
+#personal_photo > .box > ul .user-profile-sm .text h2 span {
+    font-size: 0.6rem;
+}
+#personal_photo > .box ul li blockquote p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+#personal_photo ul li .img {
+    min-height: max-content;
+    border-radius: 0px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+#personal_photo ul li .img img {
+    width: 100%;
+    height: 100%;
+    scale: 1.1;
+    object-fit: cover;
+}
+#personal_photo ul li:hover .img {
+    background: black;
+}
+#personal_photo ul .item-active:hover .img{
+    background: transparent;
+}
+#personal_photo ul li:hover .img img {
+    opacity: 0.5;
+}
+#personal_photo > .box ul li .bg-item:hover {
+    background: none;
+    opacity: 0;
+}
+#personal_photo > .box ul .item-active .bg-item:hover {
+    background: black;
+    opacity: 0.4;
+}
+#personal_photo > .box ul li .box > .text {
+    display: block;
+}
+@media only screen and (max-width: 747px) {
+    #personal_photo > .box > ul {
+        column-count: 2;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+    #personal_photo > .box > ul .user-profile-sm {
+        height: 35px;
+    }
+    #personal_photo > .box > ul .user-data .profile {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin: 0.3rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm .text h2 {
+        font-size: 0.6rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm > .icon {
+        font-size: 0.6rem;
+    }
+    #personal_photo > .box ul li blockquote p {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+    }
+    #personal_photo > .box ul li .box > .text .item-date {
+        background: none;
+        padding: 0rem;
+    }
+    #personal_photo > .box ul li .box > .text .item-date i {
+        font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .monk-infor-body .user-cover .box {
+        max-height: 193.79px;
+        height: 200px;
+    }
+    .con .con-head .swiper-slide {
+        max-height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 355px) {
+    #personal_photo > .box > ul {
+        column-gap: 0.3rem;
+    }
+    #personal_photo > .box > ul li {
+        margin-bottom: 0.3rem;
+    }
+    #personal_photo > .box > ul .user-profile-sm {
+        display: none;
+    }
+    #personal_photo > .box ul li .box > .text {
+        display: none;
+    }
+}
+/* =====================dddd====================  */
+@media only screen and (max-width: 999px) {
+    .web-section-body > .head {
+        top: 50px;
+    }
+}
+@media only screen and (max-width: 978px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 958px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 943px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+}
+@media only screen and (max-width: 848px) {
+    .monk > .box > ul li > .box > .head .row .icon:first-child {
+        display: none;
+    }
+    .monk > .box > ul li > .box > .head .row .icon {
+        opacity: 1;
+        font-size: 0.7rem;
+    }
+    .monk > .box > ul li > .box > .head .row {
+        justify-content: right;
+    }
+}
+@media only screen and (max-width: 839px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
+@media only screen and (max-width: 761px) {
+    .web-section-body > .head {
+        top: 0px;
+    }
+    /* .infor-section .head {
+        background: var(--sg-bgblack);
+    } */
+}
+@media only screen and (max-width: 760px) {
+    .theory > .con-head-i button {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1rem;
+    }
+    .theory > .bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    .theory > .bg p {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .web-section .head .icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .web-section .head .box .text h2 {
+        font-size: 0.9rem;
+    }
+    .web-section .head > .box > .row-one {
+        min-width: max-content;
+    }
+    .web-section .head > .box > .row-tow {
+        display: none;
+    }
+    /* .monk > .box > ul li .user-in {
+        display: none;
+    } */
+}
+@media only screen and (max-width: 541px) {
+    .monk > .box > ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.3rem;
+    }
+}

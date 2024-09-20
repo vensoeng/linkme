@@ -1,0 +1,178 @@
+header{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    transition: all ease-in-out 0.3s;
+    background: var(--sg-bglight);
+    display: none;
+}
+header ul{
+    height: 50px;
+}
+header ul .icon{
+    color: var(--sg-main-bg);
+    margin: 0rem 0.5rem;
+    background: transparent;
+}
+header ul .icon:hover{
+    background: var(--fds-grayBgNotisvictionHover);
+}
+header ul h2{
+    font-size: 1.2rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+}
+header ul h2::first-letter{
+    text-transform: uppercase;
+}
+
+.con{
+    display: flex;
+    align-items: initial;
+}
+.con > .photo{
+    width: calc(100% - 400px);
+    min-height: 100vh;
+    background: var(--sg-main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 50px;
+}
+.con > .photo > .images{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    min-height: 250px;
+}
+.con > .photo > .images img{
+    max-height: calc(100vh - 100px);
+    margin: 0 auto;
+    max-width: 100%;
+}
+.con > .photo form{
+    display: none;
+}
+.con .detail{
+    width: 100%;
+    max-width: 400px;
+    min-height: 100vh;
+    background: var(--sg-bglight);
+}
+.con .detail .detail-box{
+    margin: 0 0.8rem;
+}
+.con .detail .detail-box h2,
+.con .detail .detail-box p,
+.con .detail .react li h2{
+    font-size: 1.2rem;
+    font-family: var(--sg-fontbrand);
+}
+.con .detail .detail-box p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.con .detail .title{
+    margin: 1rem auto;
+}
+.con .detail .about{
+    margin-top: 1.8rem;
+    margin-top: 1rem;
+}
+.con .detail .react {
+    margin: 0.8rem auto;
+}
+.con .detail .react li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.7rem;
+    width: max-content;
+    height: 2.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 0rem;
+    border-bottom: 2px solid transparent;
+}
+.con .detail .react li.active{
+    border-bottom: 2px solid var(--fds-grayheaderHoverTow);
+}
+.con .detail .react li i{
+    font-size: 1.2rem;
+}
+.con .detail .react li h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.con .detail .main-item li{
+    margin: 0.8rem auto;
+}
+.con .detail .main-item li .profile{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0rem;
+}
+.con .detail .main-item li h2,
+.con .detail .main-item li p{
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bgblack-art);
+}
+.con .detail .main-item li p{
+    font-size: 0.5rem;
+    color: var(--sg-main-bg);
+}
+.con .detail .main-item li i.bxs-like {
+    color: #64a6ed;
+}
+.con .detail .main-item li i.bxs-bookmarks{
+    color: var(--sg-main-color-yellow);
+}
+@media only screen and (max-width: 750px) {
+    header{
+        display: block;
+    }
+    .con{
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .con > .photo{
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        background: var(--sg-bglight);
+        margin: 0.8rem auto;
+        position: relative;
+        top: 0rem;
+    }
+    .con > .photo > .images{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: var(--sg-main-bg);
+    }
+    .con > .photo form button i{
+        font-size: 1.5rem;
+    }
+    .con .detail{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .con .photo{
+        width: initial;
+        margin: 0 0.8rem;
+    }
+    .con .detail .detail-box h2{
+        font-size: 1rem;
+    }
+}
+

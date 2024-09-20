@@ -1,0 +1,37 @@
+
+.web-header{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000000000;
+    background: var(--sg-bglight);
+}
+.web-header .content{
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.web-header .content ul{
+    margin: 0 0.9rem;
+}
+.web-header ul h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--sg-main-gradienColorHover);
+    background-image: var(--sg-main-gradienColorHover); */
+    color: var(--sg-main-bg);
+}
+.web-header .btn-login a{
+    width: max-content;
+    padding: 0 1.1rem;
+    font-size: 1rem;
+    height: 2rem;
+    border-radius: 10px;
+    line-height: 0;
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+}

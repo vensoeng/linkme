@@ -1,0 +1,285 @@
+
+main{
+    position: relative;
+    min-height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-head {
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.form-head .form-body{
+    margin: 0.5rem;
+}
+.form-head .head{
+    padding-top: 1.5rem;
+}
+.form-head .head h2{
+    font-family: var(--sg-fontbrand);
+    font-size: 1.3rem;
+}
+.form-head .head ul{
+    height: 60px;
+}
+.form-head .form-body .form-con ul{
+    margin: 0 1rem;
+}
+.form-con .user-profile{
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    margin: 0rem;
+    cursor: pointer;
+    background: var(--fds-grayheaderHoverTow);
+}
+.form-con .user-profile .profile-img{
+    margin: 0rem;
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+    margin-top: 1.8rem;
+    transition: all ease-in-out 0.3s;
+}
+.form-con .user-profile:hover .profile-img{
+    scale: 1.3;
+}
+.form-con .user-profile label,
+.form-con .user-profile input{
+    cursor: pointer;
+    display: flex !important;
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    left: 0;
+    height: 40px;
+    font-size: 1rem;
+    margin: 0 auto;
+    color: var(--sg-bglight);
+    background: var(--fds-graysibar-nav);
+    transition: all ease-in-out 0.3s;
+}
+.form-con .user-profile input[type='file']{
+   width: 100%;
+   height: 100%;
+   bottom: auto;
+   left: auto;
+   inset: 0;
+   background: var(--sg-color-spece);
+   z-index: 10;
+   opacity: 0;
+}
+.form-con .user-profile label{
+    bottom: 0;
+}
+.form-con li label{
+    display: block;
+    margin: 0.8rem auto;
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+}
+
+.form-con li .txt-box{
+    position: relative;
+    height: 2.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--sg-border-00);
+}
+.form-con li .txt-box .icon{
+    min-width: 2.5rem;
+    min-height: 100%;
+}
+.form-con li .txt-box .icon-leader{
+    min-width: 2.5rem;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: var(--sg-main-bg);
+    background: var(--sg-bglight);
+}
+.form-con li .txt-box .icon-leader i{
+    opacity: 0;
+    font-size: 0.9rem;
+    transition: all ease-in-out 0.3s;
+}
+.form-con li .txt-box .icon-leader-active i{
+    opacity: 1;
+}
+.form-con li .txt-box .chang_eye i::before{
+    content: "\f06e";
+}
+.form-con li .txt-box .text-in{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-left: 0.5rem;
+}
+.form-con li .txt-box .text-in input{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    outline: none;
+    background: none;
+    color: var(--sg-main-bg);
+    -webkit-box-shadow: 0 0 0px 1000px none inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form-con li .txt-box .text-in input:-webkit-autofill{
+    color: var(--sg-main-bg);
+    -webkit-box-shadow: 0 0 0px 1000px none inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form-con li .txt-box .text-in textarea{
+    --padding: 0.1rem;
+    outline: none;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    background: none;
+    min-height: calc(3lh + 2 * var(--padding));
+	field-sizing: content;
+	line-height: 1.5;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+	padding-inline: calc(var(--padding) + calc((1lh - 1ex) / 2));
+}
+.form-con li .txt-box:has(textarea){
+    height: max-content;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-con li .txt-box:has(textarea) .text-in{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.form-con li .text-length{
+    margin: 0.5rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0rem;
+}
+.form-con li .text-length span{
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+}
+.form-con li .txt-box .txt-in-type-file{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+.form-con li .txt-box .txt-in-type-file input{
+    height: auto;
+    background: none;
+    margin-left: -6.4rem;
+}
+.form-con .text-check input[type='checkbox']{
+    width: 1.3rem;
+    height: 1.3rem;
+    position: relative;
+    outline: 1px solid var(--sg-bglight);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    background: none;
+    cursor: pointer;
+}
+.form-con .text-check{
+    margin: 0.5rem auto;
+    margin-left: 0.2rem;
+}
+.form-con .text-check input[type='checkbox']::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    border-radius: 6px;
+    z-index: 0;
+    background: transparent;
+    transition: all ease-in 0.3s;
+    background: var(--sg-bglight);
+}
+.form-con .text-check input[type='checkbox']:checked::before{
+    background: var(--sg-main-bg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.form-con .text-check input[type='checkbox']::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    color: var(--sg-bglight);
+}
+.form-con .text-check input[type='checkbox']:checked::after{
+    opacity: 1;
+}
+.form-con .main-btn{
+    overflow: hidden;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.form-con .main-btn .btn{
+    cursor: pointer;
+    width: 100%;
+    height: 2.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: var(--sg-fontbrand);
+    display: block;
+    margin: 0 auto;
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+}
+.form-con li.is-skip .skip{
+    color: var(--sg-main-bg);
+    width: max-content;
+    padding: 0rem 1rem;
+    margin-left: 0.8rem;
+    background: none;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    
+}
+.form-head .text-check label{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.form-head .text-signup p{
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+}
+.form-con .text-signup a{
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-button-blueHover);
+}
+.form-head .bg{
+    display: none;
+}

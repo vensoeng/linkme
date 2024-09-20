@@ -1,0 +1,103 @@
+
+
+.form-head nav.head{
+    padding: 0rem;
+    position: relative;
+}
+.form-head nav.head::before,
+.form-head nav.head::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3rem;
+    background: linear-gradient(261deg, #ffffff 0%, transparent);
+}
+.form-head nav.head::after{
+    right: auto;
+    left: -0.2rem;
+    width: 1rem;
+    background: linear-gradient(90deg, #ffffff 0%, transparent);
+}
+.form-head nav.head ul{
+    height: 45px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.form-head nav.head ul li:first-child{
+    margin-left: 0.5rem;
+}
+.form-head nav.head ul li{
+    margin: 0 0.2rem;
+}
+.form-head nav.head ul li a{
+    width: max-content;
+    overflow: hidden;
+    border-radius: 50rem;
+    padding: 0rem 0.8rem;
+    line-height: 0;
+    font-size: 0.92rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+    border: 1px solid var(--sg-border-00);
+}
+.form-head nav.head ul li a.active{
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+}
+.form-head nav.head ul li a::first-letter{
+    text-transform: uppercase !important;
+}
+
+/* ---------------linkme user--------------------  */
+.linkme-form{
+    position: initial;
+    opacity: 1;
+    max-height: initial;
+    min-height: initial;
+    transform: none;
+    background: none;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+.linkme-form .linkme-form-user{
+    margin: 0 auto;
+}
+/* --------------------------------link lish is copleted-  */
+.linkme{
+    margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
+    height: 80vh;
+    max-height: 80vh;
+    min-height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    z-index: 10000000000000000;
+}
+.likme-user{
+    margin-top: 1.8rem;
+}
+.linkme-con{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    margin: 0.5rem;
+    margin-right: 0rem;
+}
+.linkme .link-head{
+    cursor: pointer;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    z-index: 1000;
+}
+.linkme .linkme-list li{
+    background: none;
+}
+.form-con .link-completed-btn .btn{
+    max-width: 350px;
+    margin: 0 auto;
+}

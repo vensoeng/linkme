@@ -1,0 +1,219 @@
+.user-post{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.user-post-body{
+    margin: 0 1rem;
+}
+.user-post-body > ul {
+    position: relative;
+}
+.user-post-body > ul > li{
+    border-radius: 16px;
+    margin: 0.5rem auto;
+    background: var(--sg-bglight);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+    background: var(--sg-bglight);
+}
+.user-post-body > ul li.data-list-remove{
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    opacity: 0.8;
+    overflow: hidden;
+}
+.user-post-body > ul li.data-list-remove::before{
+    content: 'This content hes been deleted.';
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    color: var(--sg-bglight);
+    backdrop-filter: brightness(0.5);
+}
+.user-post .head{
+    padding: 0.8rem;
+}
+.user-post .head .profile{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+.user-post .post-title{
+    margin: 0.5rem;
+    margin-left: 1.3rem;
+    margin-top: 0rem;
+    font-weight: 500;
+}
+.user-post .post-img .post-type-txt{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--fds-graColor);
+    background: var(--sg-main-bg);
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+.user-post .post-img .post-type-txt h2{
+    font-size: 1.5rem;
+    font-family: var(--sg-fontbrand);
+    font-weight: 600;
+    padding: 1rem;
+}
+.user-post .head h2,
+.user-post .post-title h2,
+.user-post .head p,
+.user-post .post-feature li p{
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+}
+.user-post .head p i{
+    font-size: 0.6rem;
+    margin-left: 0.1rem;
+    opacity: 0.8;
+}
+.user-post .post-title h2{
+    font-weight: 500;
+}
+.user-post .head h2:hover{
+    text-decoration: underline;
+}
+.user-post .head p{
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+}
+.user-post .head .icon{
+    /* width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.9rem; */
+    cursor: pointer;
+}
+.user-post .head .icon:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.user-post .post-img,
+.user-post .post-feature,
+.user-post .post-des{
+    margin: 0.8rem;
+    margin-top: 0rem;
+}
+.user-post .post-img{
+    margin: 0.8rem 0.5rem;
+    margin-top: 0rem;
+}
+.user-post .post-img li{
+    max-width: 200px;
+    overflow: hidden;
+}
+.user-post .post-img li:has(.post-type-txt){
+    max-width: 500px;
+}
+.user-post .post-img li img{
+    max-width: 200px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.user-post .post-feature{
+    margin-bottom: 0.3rem;
+}
+.user-post .post-feature li{
+    margin-right: 0.4rem;
+}
+.user-post .post-feature .icon{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.user-post .post-feature button i{
+    font-size: 1.222222rem;
+}
+/* .user-post .post-feature .icon:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+} */
+.user-post .post-feature li p{
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+}
+.user-post .post-feature li button.active i.bx-like::before{
+    content: "\ee0a";
+}
+.user-post .post-feature li button.active i.bx-bookmark::before{
+    content: "\ece3";
+}
+.user-post .post-des{
+    margin: 1rem 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+.user-post .post-foot{
+    height: 55px;
+}
+.user-post .post-foot a,
+.user-post .post-foot form.see button{
+    width: max-content;
+    padding: 0rem 0.6rem;
+    height: 1.8rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    line-height: 0;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontbrand);
+    background: var(--sg-main-bg);
+}
+.user-post .post-foot a:hover,
+.user-post .post-foot form.see button:hover{
+   opacity: 0.8;
+}
+.user-post .post-foot button{
+    margin-right: 1rem;
+}
+.user-post .post-foot button:hover{
+    color:var(--sg-main-color-pink);
+    opacity: 0.8;
+}
+.user-post-body > ul li.data-list-remove .post-foot button::before{
+    display: none;
+}
+/* ================this is user content==============  */
+.user-post .user-content{
+    margin: 0 0.3rem;
+    border: 1px solid var(--sg-border-00);
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.user-post .user-content .user-content-box{
+    margin: 0.8rem;
+    margin-top: 0rem;
+}
+.user-post .user-content .profile{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.user-post .user-content .user-name h2::after{
+    left: calc(100% + 8px) !important;
+}
+.user-post .user-content .post-profile{
+    align-items: initial;
+}
+@media only screen and (max-width: 1000px) {
+    .user-post .post-foot button::before{
+        display: none;
+    }
+}
+

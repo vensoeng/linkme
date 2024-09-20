@@ -1,0 +1,718 @@
+.web-main{
+    display: block;
+}
+.web-main .con{
+    display: block;
+    margin: 0 auto;
+}
+.web-main .con .con-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.web-main .con-box > .head{
+    position: sticky;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: 0;
+    z-index: 100000000;
+    overflow: hidden;
+    background: var(--sg-main-bg);
+    transition: all ease-in-out 0.3s;
+}
+.web-main .con-box > .web-header-remove {
+    top: var(--hieght--);
+}
+.web-main .con-box > .head .head-top .df-l {
+    margin: 1rem;
+}
+.web-main .con-box > .head .profile{
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 16px;
+}
+.web-main .con-box > .head h2,
+.web-main .con-box > .head h3{
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bglight);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.web-main .con-box > .head > .icon{
+    width: initial;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    color: var(--sg-bglight);
+    cursor: pointer;
+    border: 2px solid var(--fds-grayheadrinputBoder-00);
+}
+.web-main .con-box > .head > .icon span{
+    font-family: var(--sg-fontbrand);
+}
+/* this is view linkyou -------------------------------------- */
+.view-linkyou-box {
+    margin: 0.8rem 1.3rem;
+}
+.view-linkyou-box .icon{
+    width: max-content;
+    height: 2.5rem;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--sg-border-00);
+    color: var(--sg-main-bg);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.view-linkyou-box .icon .profile{
+    width: 1.8rem;
+    height: 1.8rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    margin: 0 0.4rem;
+}
+.view-linkyou-box .icon:has(.profile){
+    padding-left: 0rem;
+    /* color: var(--sg-bglight);
+    background: var(--sg-main-bg); */
+}
+.view-linkyou-box .icon:has(.profile) span{
+    margin-left: 0rem;
+}
+.view-linkyou-box .icon:has(.profile) span::before{
+    content: 'Your profile';
+}
+.view-linkyou-box .icon:hover{
+    opacity: 0.8;
+}
+.view-linkyou-box .icon:last-child{
+    border: none;
+    color: var(--sg-main-bg);
+}
+.view-linkyou-box .icon span{
+    margin-left: 0.5rem;
+    font-family: var(--sg-fontbrand);
+}
+.view-linkyou-box .icon:last-child span{
+    margin: 0 0.5rem;
+}
+/* this Is main button for add new link -------------- */
+.scroll-y-box > .main-btn,
+.add-a-new-link{
+    position: sticky;
+    bottom: 0;
+    z-index: 100000;
+    margin: 0 1rem;
+    height: 100px;
+}
+.scroll-y-box > .main-btn::before,
+.add-a-new-link::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+                0deg,
+                var(--sg-bglight) 0%,
+                transparent
+            );
+}
+.scroll-y-box > .main-btn .btn,
+.add-a-new-link .btn{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 2.8rem;
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+    z-index: 3;
+}
+.scroll-y-box > .main-btn .btn i,
+.add-a-new-link .btn i{
+    margin: 0 0.5rem;
+}
+/* -------------this is list link of user-----------------------M  */
+.scroll-y-box li{
+    border-radius: 16px;
+    margin: 0.5rem 1rem;
+    background: var(--sg-bglight);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.scroll-y-box li > .box{
+    min-height: 150px;
+    margin-right: 1rem;
+}
+.scroll-y-box li .left{
+    margin: 0 1rem;
+}
+.scroll-y-box li .left a{
+    font-size: 1rem;
+    color: var(--fds-grayBgNotisviction);
+}
+.scroll-y-box li .left .icon{
+    min-width: 2.3rem;
+    min-height: 2.3rem;
+    cursor: pointer;
+}.scroll-y-box li .left .icon:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.scroll-y-box li .list-con{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+.scroll-y-box li  .list-con .head{
+    margin: 0rem;
+}
+.scroll-y-box li  .list-con .head h2{
+    font-size: 1.1rem;
+    font-family: var(--sg-fontbrand);
+}
+.scroll-y-box li  .list-con .head .text i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin-left: 0 0.1rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50rem;
+    cursor: pointer;
+}
+.scroll-y-box li  .list-con .head .text i:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.scroll-y-box li .list-con .head .list-icon .icon{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--fds-grayheadr-00);
+}
+
+.scroll-y-box li .list-con .head .list-icon input{
+    width: 2.3rem;
+    height: 1.2rem;
+    position: relative;
+    outline: 1px solid var(--sg-bglight);
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    background: none;
+    cursor: grab;
+}
+.scroll-y-box li .list-con .head .list-icon input::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--sg-main-bg);
+    border-radius: 50rem;
+    opacity: 0.3;
+    z-index: 0;
+    transition: all ease-in-out 0.2s;
+}
+.scroll-y-box li .list-con .head .list-icon input::after{
+    content: '';
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 0;
+    border-radius: 50rem;
+    background: var(--sg-bglight);
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.scroll-y-box li .list-con .head .list-icon input:checked::before{
+    opacity: 0.9;
+}
+.scroll-y-box li .list-con .head .list-icon input:checked::after{
+    left: auto;
+    right: 0;
+}
+.scroll-y-box li  .list-con .url{
+    margin: 10px 0rem;
+}
+.scroll-y-box li  .list-con .url h2{
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.scroll-y-box li .list-con .url .icon{
+    min-width: 2rem;
+    min-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 0.3rem;
+    cursor: pointer;
+}
+.scroll-y-box li .list-con .url > .text{
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+.scroll-y-box li .list-con .foot .icon{
+    overflow: hidden;
+}
+.scroll-y-box li .list-con .foot .icon img{
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    border-radius: 50rem;
+    object-fit: cover;
+}
+.scroll-y-box li .list-con .url .icon i,
+.scroll-y-box li .list-con .foot .icon i{
+    font-size: 0.9rem;
+}
+.scroll-y-box li .list-con .url .icon:hover,
+.scroll-y-box li .list-con .foot .icon:hover,
+.scroll-y-box li .list-con .head .list-icon .icon:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.scroll-y-box li  .list-con .foot .icon{
+    width: 1.8rem;
+    height: 1.8rem;
+    color: var(--fds-grayheadrBglaungu-00);
+}
+.scroll-y-box li  .list-con .foot .delete-icon .icon{
+    color: var(--sg-main-bg);
+}
+.scroll-y-box li  .list-con .foot .delete-icon .icon:hover{
+    color: var(--sg-main-color-pink);
+}
+.scroll-y-box li  .list-con .foot .active{
+    color: var(--fds-grayheadr-00);
+}
+/* ---------------------------------this is show user link -----------  */
+.linkme{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    max-width: 350px;
+    width: 100%;
+    height: 80vh;
+    max-height: 80vh;
+    min-height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    z-index: 100;
+    display: none;
+    order: 3;
+}
+.linkme-active{
+    display: none;
+}
+.linkme-con{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    margin: 0.5rem;
+    margin-right: 0rem;
+}
+.linkme .link-head{
+    cursor: pointer;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    z-index: 1000;
+}
+.linkme .linkme-list li{
+    background: none;
+}
+/* ----------------------this is folloer----------------------  */
+.web-post{
+    max-width: 100%;
+}
+.web-post .head-user a{
+    min-width: 120px;
+    min-height: 120px;
+    margin: 0 0.2rem;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--sg-bgblack);
+    position: relative;
+}
+.web-post .head-user .follower-data::before{
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+    -webkit-animation: shimmer 3s forwards;
+    animation: shimmer 3s forwards;
+    content: "";
+    z-index: 4;
+}
+@keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+}
+
+.web-post .head-user .scroll-x .icon-ra{
+    margin-top: 1rem;
+    border-radius: 16px;
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+    position: initial;
+}
+.web-post .head-user .scroll-x .icon-ra h2{
+    color: var(--sg-bglight);
+}
+.web-post .head-user .scroll-x .icon-ra img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: none;
+}
+.web-post .head-user .scroll-x a:has(.follower) .icon-ra::before,
+.web-post .head-user .scroll-x a:has(.following) .icon-ra::before{
+    width: 0.6rem;
+    height: 0.6rem;
+    content: '';
+    position: absolute;
+    border-radius: 5000rem;
+    right: 0.75rem;
+    top: 0.75rem;
+    background: transparent;
+}
+.web-post .head-user .scroll-x a:has(.follower) .icon-ra::before,
+.web-post .head-user a.list-active:has(.following) .icon-ra::before{
+    background: darksalmon;
+}.web-post .head-user .scroll-x a:has(.following) .icon-ra::before,
+.web-post .head-user a.list-active:has(.follower) .icon-ra::before{
+    background: darkgrey;
+}
+.web-post .head-user a.list-active:has(.following) .icon-ra::before{
+    background: darksalmon;
+}
+.web-post .head-user .scroll-x a .form,
+.web-post .head-user .scroll-x a form{
+    padding: 0.8rem 0rem;
+    padding-top: 0.5rem;
+}
+.web-post .head-user .scroll-x a button.btn{
+    padding: 0rem 0.5rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    display: inline-block;
+    height: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    max-height: 24px;
+    min-width: 68.75px;
+    position: relative;
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+}
+.web-post .head-user .scroll-x a button.btn:active{
+    opacity: 0.8;
+}
+.web-post .head-user .scroll-x a button.btn span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.web-post .head-user .scroll-x a button.btn span:first-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--sg-main-bg);
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+.web-post .head-user .scroll-x a button.btn:active span:first-child,
+.web-post .head-user a.list-active button.btn span:first-child{
+    top: -100%;
+    opacity: 0;
+}
+.web-post .head-user .scroll-x a:first-child .icon-ra{
+    background-image: var(--img);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.web-post .head-user .scroll-x a:first-child .icon-ra h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.522);
+}
+.web-post .head-user .scroll-x a:first-child .icon-ra h2 i{
+    font-size: 1.2rem;
+}
+.web-post .head-user .scroll-x a .form button.btn{
+    color: var(--sg-bglight);
+    background: var(--sg-main-gradienColorHover);
+}
+/* ===========this is form for edit==========  */
+@media only screen and (max-width: 700px) {
+    .linkme{
+        position: initial;
+        margin: 0 auto;
+        height: calc(100vh - 240px);
+        display: flex;
+    }
+    .linkme .link-head {
+       margin-top: 2rem;
+    }
+    .linkme .link-head .icon{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .web-main .con-box > .head .head-top .df-l{
+        margin: 1rem 0.5rem;
+    }
+    .web-main .con-box > .head > .icon{
+        margin: 0 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .web-main .con-box > .head h2{
+        font-size: 3.7vw;
+    }
+    .view-linkyou-box{
+        margin: 0.8rem;
+    }
+    .scroll-y-box li{
+        margin: 0.5rem;
+    }
+    .linkme{
+        width: initial;
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+/* -----------------------------this is form Reatetion---------------- */
+.form-fix {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease-in 0s;
+  }
+  .form-reaction,
+  .form-pop {
+    z-index: 10000000000000000000000000;
+  }
+  .form-reaction .head{
+    position: sticky;
+    top: -5px;
+    z-index: 100;
+    padding-top: 5px;
+    background: var(--sg-bglight);
+  }
+  .form-reaction-body-con {
+    height: max-content;
+    max-height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    min-height: 50vh;
+  }
+  .form-reaction-body-con::-webkit-scrollbar,
+  .form-pop-body::-webkit-scrollbar {
+    display: none;
+  }
+  body:has(.form-reaction-active),
+  body:has(.form-pop-active) {
+    overflow: hidden;
+  }
+  .form-reaction-active,
+  .form-pop-active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .reat-bg,
+  .form-pop-bg {
+    opacity: 0;
+    background: black;
+    z-index: 0;
+    transition: all ease-in 0.3s;
+    transform: translate(-50%, -50%) scale(1) !important;
+  }
+  .form-reaction-active .reat-bg,
+  .form-pop-active .form-pop-bg {
+    opacity: 0.3 !important;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .form-reaction-body,
+  .form-pop-body {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--sg-bglight);
+    z-index: 1000;
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+  }
+  .form-reaction-active .form-reaction-body,
+  .form-pop-active .form-pop-body {
+    opacity: 1;
+  }
+  .form-reaction .head ul,
+  .form-reaction .foot {
+    height: 40px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--sg-border-00);
+  }
+  .form-reaction .head ul .arrow {
+    margin: 0rem 0.8rem;
+  }
+  .form-reaction .head ul .arrow i{
+    font-size: 1.5rem;
+  }
+  .form-reaction .head ul .arrow .icon:hover {
+    background: var(--fds-graynavHover);
+  }
+  .form-reaction .head ul .i-reaction {
+    height: 100%;
+    margin: 0 0.1rem;
+    padding: 0rem 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+  }
+  .form-reaction .head ul .i-reaction .bxs-like,
+  .form-reaction .reate ul .btn .bxs-like {
+    color: #64a6ed;
+  }
+  .form-reaction .head ul .i-reaction .bxs-bookmarks,
+  .form-reaction .reate ul .btn .bxs-bookmarks {
+    color: var(--sg-main-color-yellow);
+  }
+  .form-reaction .head ul .i-reaction:hover,
+  .form-reaction .head ul .i-reaction-active {
+    border-bottom: 2px solid var(--sg-main-bg);
+  }
+  .form-reaction .head ul .i-reaction p,
+  .form-reaction .head ul .i-reaction i,
+  .form-reaction .head ul .i-reaction span,
+  .form-reaction .foot p,
+  .form-pop blockquote p,
+  .form-pop .head h2 {
+    margin-right: 0.2rem;
+    font-size: 1rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+  }
+  .form-pop blockquote {
+    margin: 1rem;
+    text-align: center;
+  }
+  .form-pop blockquote p {
+    margin: 0 auto;
+  }
+  .form-pop .head {
+    position: relative;
+  }
+  .form-pop .head .icon {
+    position: absolute;
+    margin: 0 1rem;
+    margin-right: 0rem;
+    left: 0rem;
+  }
+  .form-pop .head .icon:hover {
+    background: var(--fds-grayBgNotisvictionBgArtical);
+  }
+  .form-pop .head h2 {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3;
+  }
+  .form-reaction .head ul .i-reaction span {
+    margin-right: 0rem;
+  }
+  .form-reaction .reate ul .profile {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .form-reaction .reate{
+    display: flex;
+    align-items: initial;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .form-reaction .reate ul{
+    margin-right: -100%;
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+    background: var(--sg-bglight);
+    opacity: 0;
+  }
+  .form-reaction .reate ul.active{
+    margin-right: 0%;
+    opacity: 1;
+  }
+  .form-reaction .reate ul li {
+    margin: 0.5rem auto;
+  }
+  .form-reaction .reate ul h2,
+  .form-reaction .reate ul p {
+    font-size: 0.8rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bgblack-art);
+  }
+  .form-reaction .reate ul p {
+    font-size: 0.5rem;
+    color: var(--sg-main-bg);
+  }
+  .form-reaction .foot p {
+    margin: 0 0.8rem;
+    font-size: 0.6rem;
+    color: var(--sg-color-text);
+  }
+  .form-reaction .foot {
+    top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: var(--sg-bglight);
+  }
+  .form-pop .foot {
+    padding: 1rem;
+  }
+  .form-pop .foot .icon {
+    width: 100%;
+    height: 2.8rem;
+    padding: 0rem;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+    box-sizing: border-box;
+    border: 1px solid transparent;
+  }
+  .form-pop .foot .icon:first-child {
+    background: var(--sg-main-bg);
+    color: var(--sg-bglight);
+  }
+  .form-pop .foot .icon:last-child {
+    border-color: var(--sg-border-00);
+  }

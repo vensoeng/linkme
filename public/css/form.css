@@ -1,0 +1,592 @@
+.web-form,
+.web-form .form-b {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: all ease-in-out 0.3;
+}
+.web-form-active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+.web-form > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.web-form > form::-webkit-scrollbar {
+    display: none;
+}
+.web-form .form-b {
+    opacity: 0.4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background: rgba(0, 0, 0, 0.849);
+    z-index: 10;
+}
+.web-form-active .form-b {
+    opacity: 0.4;
+}
+.web-form-body {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    background: var(--sg-bglight);
+    box-shadow: var(--sg-iconboxShadow);
+    transition: all ease-in-out 0.5s;
+    z-index: 1000000000000000000000;
+}
+.web-form .web-form-body-scall{
+    width: 10px;
+    height: 10px;
+    border-radius: 50rem;
+    scale: 0.8;
+}
+.web-form-active .web-form-body-scall{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    scale: 1;
+}
+
+.web-form-body > .head {
+    height: 50px;
+    color: var(--sg-mainColor-yellow);
+    border-bottom: 1px solid var(--sg-main-bg-btn-signin);
+    background: var(--sg-main-bg);
+}
+.web-form-body > .head h2  span{
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--main-font);
+    color: var(--sg-maincolor);
+}
+.web-form-body > .head a .icon-ra {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+}
+.web-form-body > .head > .icon-ra {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    color: var(--sg-color-text);
+    background: var(--sg-main-bg-btn-signin-hover);
+}
+.web-form-body > .head a span {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--sg-bglight);
+    font-family: var(--sg-fontbrand);
+/*     
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--sg-main-gradienColorHover); */
+}
+.web-form-body .form-head ul {
+    margin: 0rem 0.8rem;
+    padding: 0.8rem 0rem;
+}
+.web-form-body .form-head .profile-img {
+    overflow: hidden;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50rem;
+    box-sizing: border-box;
+    outline: 2px solid var(--sg-main-bg);
+    outline-offset: 3px;
+    margin-left: 0.4rem;
+    background: var(--sg-maincolor);
+    color: var(--sg-color-white);
+}
+.web-form-body .form-head .profile-name{
+    margin-top: -0.5rem;
+}
+.web-form-body .form-head .profile-name h2 {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 500;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+}
+.web-form-body .form-head .profile-name p {
+    font-size: 0.7rem;
+    margin-top: -5px;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+    opacity: 0.7;
+}
+.web-form-body .form-head .status {
+    width: max-content;
+    padding: 0rem 0.5rem;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--sg-bgblack);
+}
+.web-form-body .form-head .status select {
+    font-size: 0.8rem;
+    background: none;
+    width: 100%;
+    outline: none;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+}
+/* this is content of form  */
+.web-form-body .main {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 100vh;
+    height: calc(100vh - 300px);
+}
+.web-form-body .main label {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 1rem;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+}
+.web-form-body .main .txt-title,
+.web-form-body .main .text-caption {
+    position: relative;
+    padding: 0rem 0.8rem;
+    overflow: hidden;
+    min-height: max-content;
+}
+.web-form-body .main .txt-title input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-color);
+    background: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    text-indent: 0.5rem;
+    transition: all ease-in-out 0.5s;
+    color: var(--sg-main-bg);
+    -webkit-box-shadow: 0 0 0px 1000px none inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.web-form-body .main .txt-title input:-webkit-autofill{
+    color: var(--sg-main-bg);
+    -webkit-box-shadow: 0 0 0px 1000px none inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.web-form-body .main .text-caption {
+    max-width: 100%;
+}
+.web-form-body .main .text-caption .txt-caption-box {
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    display: grid;
+}
+.web-form-body .main .text-caption textarea {
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    resize: none;
+    overflow: hidden;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+    --padding: 0.5rem;
+    min-height: calc(3lh + 5 * var(--padding));
+	field-sizing: content;
+	padding: var(--padding);
+    padding-inline: calc(var(--padding) + calc((1lh - 1ex) / 2));
+    line-height: 1.5;
+}
+.web-form-body .main .text-caption .text-length{
+    margin: 0.5rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0rem;
+}
+.web-form-body .main .text-caption .text-length span{
+    font-size: 0.9rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+}
+.web-form-body .main .txt-photo {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.8rem;
+    border:1px solid var(--sg-border-00);
+}
+.web-form-body .main .txt-photo:hover .txt-photo-box {
+    background: var(--fds-gBlueto-wiedth);
+}
+.web-form-body .main .txt-photo-box {
+    width: 100%;
+    min-height: 250px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--sg-bgblack);
+    cursor: pointer;
+    color: var(--sg-main-bg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .web-form-body .main .txt-photo-box::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #FFFFFF 50%, var(--sg-main-bg) 100%);
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+    z-index: 0;
+} 
+.web-form-body .main .txt-photo-box:hover::before{
+    opacity: 0;
+}  
+.web-form-body .main .txt-photo-box::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50rem;
+    top: 53%;
+    left: 52%;
+    scale: 0.95;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+} */
+
+.web-form-body .main .txt-photo-box-active ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: transparent;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 3;
+}
+.web-form-body .main .txt-photo-box-active:hover ul {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.web-form-body .main .txt-photo-box img {
+    display: none;
+}
+.web-form-body .main .txt-photo-box-active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+.web-form-body .main .txt-photo-box-active:hover img {
+    opacity: 0.4;
+}
+.web-form-body .main .txt-photo ul li:first-child {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+    background: none;
+}
+.web-form-body .main .txt-photo ul li:first-child i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.web-form-body .main .txt-photo ul li h2 {
+    font-family: var(--sg-fontbrand);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.web-form-body .main .txt-photo ul li p {
+    font-size: 0.8rem;
+    font-family: var(--sg-fontbrand);
+}
+.web-form-body .main .txt-select ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0rem 0.8rem;
+}
+.web-form-body .main .txt-select ul .txt-select-list-con {
+    height: 35px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+}
+.web-form-body .main .txt-select ul .txt-select-list-con select {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: none;
+    color: var(--sg-main-bg);
+    font-size: 0.9rem;
+    text-indent: 0.5rem;
+    font-family: var(--sg-fontbrand);
+}
+.web-form-body .main .txt-select ul .txt-select-list-con select option,
+.web-form-body .form-head .status select option {
+    font-family: var(--sg-fontbrand);
+    font-size: 0.9rem;
+    color: var(--sg-main-bg);
+    background: var(--sg-bglight);
+}
+.web-form-body .main .txt-popular {
+    height: 50px;
+    padding: 0rem 0.8rem;
+}
+.web-form-body .main .txt-popular input {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-left: 0.2rem;
+}
+.web-form-body .main .txt-popular input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    background: var(--sg-main-bg-search);
+    border: 1px solid var(--sg-main-bg-btn-signin);
+    border-radius: 5px;
+}
+.web-form-body .main .txt-popular input[type="checkbox"]:checked:before {
+    background: var(--sg-main-bg-btn-signin-hover);
+}
+.web-form-body .main .txt-popular input[type="checkbox"]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid var(--sg-color-text-hover);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+.web-form-body .main .txt-range {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.8rem;
+    border: 1px solid var(--sg-main-bg-btn-signin);
+}
+.web-form-body .main .txt-range .box {
+    margin: 10px;
+    padding-right: 0rem;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--sg-main-bg-btn-signin);
+    cursor: pointer;
+    color: var(--sg-color-text);
+}
+.web-form-body .main .txt-range .box ul {
+    text-align: left;
+    max-width: 100%;
+    padding: 10px;
+}
+.web-form-body .main .txt-range ul li {
+    display: inline-flex;
+    justify-content: left;
+    padding-right: 0.5rem;
+    border-radius: 50rem;
+    font-size: 0.9rem;
+    font-family: var(--sg-font-noto);
+    border: 1px solid var(--sg-main-bg-btn-signin-hover);
+    margin-right: 0.2rem;
+    margin-top: 0.5rem;
+}
+.web-form-body .main .txt-range ul li a {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: var(--sg-main-bg-btn-signin);
+    margin-right: 0.2rem;
+    color: var(--sg-color-text);
+}
+.web-form-body .main .txt-range ul li a:active {
+    background: var(--sg-main-bg-btn-signin-hover);
+}
+.web-form-body .main .txt-range ul li span {
+    font-family: var(--sg-font-noto);
+}
+.web-form-body .main .txt-popular p {
+    font-size: 0.9rem;
+    font-family: var(--sg-font-noto);
+    color: var(--sg-color-text);
+    margin: 0 0.5rem;
+}
+.web-form-body .foot .foot-body {
+    border-radius: 10px;
+    /* overflow: hidden; */
+    margin: 0.8rem;
+    padding: 0.8rem 0rem;
+    border: 1px solid var(--sg-border-00);
+}
+.web-form-body .foot h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.8rem;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+}
+.web-form-body .foot ul {
+    margin-right: 0.2rem;
+}
+.web-form-body .foot li {
+    margin-right: 0.2rem;
+    box-sizing: border-box;
+    border: 1px solid var(--sg-border-00);
+    border-radius: 8px;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+    color: var(--sg-main-bg);
+}
+.web-form-body .foot li i,
+.web-form-body .foot li span {
+    font-size: 0.9rem;
+}
+.web-form-body .foot li::before {
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+    box-shadow: none;
+}
+.web-form-body .submit-form .box {
+    padding-bottom: 0.8rem;
+}
+.web-form-body .submit-form .btn {
+    width: 100%;
+    margin: 0rem 0.8rem;
+    height: 40px;
+    border-radius: 7px;
+    font-family: var(--sg-fontbrand);
+    font-size: 1rem;
+    color: var(--sg-color-text-hover);
+    cursor: pointer;
+    color: var(--fds-graColorHeader);
+    background: var(--sg-main-bg);
+}
+.web-form-body .main .txt-title .txt-title-box{
+    position: relative;
+}
+.web-form-body .main .txt-title .txt-title-box .lead{
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 1.05rem);
+    transform: translate(-50%,-50%);
+    height: calc(100% - 2px);
+    width: 2rem;
+    border-radius: 0px 7px 7px 0px;
+    background: var(--sg-bglight);
+}
+.web-form-body .main .txt-title .txt-title-box .lead .icon{
+    width: 100%;
+    height: 100%;
+}
+.web-form-body .main .txt-title .txt-title-box .lead .icon i{
+    font-size: 1.2rem;
+}
+.web-form-body .main .txt-title .txt-title-box .eye-active i::before{
+    content: "\ec0c";
+}
+/* ===============add more customization======================  */
+
+/* ============form link respone==================> */
+@media only screen and (max-width: 515px) {
+    .web-form-active > form{
+       align-items: end;
+    }
+    .web-form-body{
+        max-width: 100%;
+        margin-bottom: -100%;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .web-form-body > .head{
+        background: var(--sg-bglight);
+        border-color: var(--sg-border-00);
+    }
+    .web-form-body > .head a span{
+        color: var(--sg-main-bg);
+    }
+    .web-form-body > .head > .icon-ra{
+        color: var(--sg-main-bg);
+        background: var(--sg-bgblack);
+    }
+    .web-form-body > .head > .icon-ra:hover{
+        opacity: 0.9;
+    }
+    .web-form-active .web-form-body{
+        margin-bottom: 0%;
+    }
+    .web-form-body .main{
+        height: 0px;
+        transition: all ease-in-out 0.5s;
+    }
+    .web-form-active .web-form-body .main{
+        height: calc(100vh - 300px);
+    }
+    .web-form .web-form-body-scall {
+        width: 100%;
+        height: initial;
+        border-radius: 8px;
+        scale: 1;
+    }
+}

@@ -1,0 +1,163 @@
+.linkme_root{
+    --bg-main: rgb(43,21,47);
+    --bg-list-main: rgb(240,182,255);
+    --bg-girl: rgb(245,245,245);
+    --bg-list-girl: rgb(255,255,255);
+    --box-shadow-color-girl:rgb(0,0,0);
+}
+.linkme{
+    width: 100%;
+    min-height: 100vh;
+    /* background: var(--bg-main); */
+    background: rgb(64 8 74);
+}
+.linkme-con{
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+.linkme .link-head{
+    position: sticky;
+    top: 40px;
+    z-index: 0;
+}
+.linkme .link-head .icon{
+    cursor: pointer;
+    color: var(--sg-bglight);
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+
+.linkme .profile{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.linkme .likme-user .text{
+    text-align: center;
+    margin: 1rem auto;
+}
+.linkme .likme-user .text h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--bg-list-main);
+    padding-bottom: 0.5rem;
+}
+.linkme .likme-user .text blockquote{
+    max-width: 250px;
+    margin: 0 auto;
+}
+.linkme .likme-user .text blockquote p{
+    color: var(--bg-list-main);
+    opacity: 0.8;
+    font-weight: 500;
+}.linkme .likme-user .text blockquote p::selection,
+.linkme .likme-user .text h2::selection{
+    color: rgb(64 8 74);
+    background: transparent;
+}
+.linkme .likme-user ul li a{
+    width: 2.2rem;
+    height:2.2rem;
+    font-size: 1.8rem;
+    color: var(--bg-list-main);
+}
+.linkme .linkme-list{
+    margin: 2rem auto;
+    margin-bottom: 1.5rem;
+}
+.linkme .linkme-list li{
+    margin: 0.8rem auto;
+    position: relative;
+}
+.linkme .linkme-list li::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    background: var(--sg-main-bg);
+}
+.linkme .linkme-list li:hover .df-s{
+    scale: 0.99;
+}
+.linkme .linkme-list .df-s{
+    position: relative;
+    z-index: 1;
+    height: 68px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--bg-list-main);
+}
+.linkme .linkme-list .text{
+    width: 100%;
+    height: 100%;
+}
+.linkme .linkme-list .text h2{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--sg-main-bg);
+    font-family: var(--sg-fontbrand);
+}
+.linkme .linkme-list .leading{
+    height: 100%;
+    min-width: 2rem;
+}
+.linkme .linkme-list .leading:first-child{
+    margin-left: 0.5rem;
+}
+.linkme .linkme-list .leading:last-child{
+    margin-right: 1rem;
+}
+.linkme .linkme-list .leading .icon{
+    min-width: 50px;
+    min-height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.linkme .linkme-list .leading .icon img{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50rem;
+    object-fit: cover;
+}
+.linkme .linkme-list .leading .icon:hover{
+    background: var(--fds-grayBgNotisvictionBgArtical);
+}
+.linkme .linkme-list .leading:first-child .icon i{
+    font-size: 1.8rem;
+}
+.linkme-main-contact .icon{
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    color: var(--bg-list-main);
+    transition: all ease-in 0.1s;
+}
+.linkme-main-contact .icon:hover{
+    font-size: 1.9rem;
+}
+.linkme .linkme-detail > .main-btn{
+    margin: 2rem auto;
+}
+.linkme .linkme-detail > .main-btn .icon{
+    width: max-content;
+    margin: 0 auto;
+    height: 2.8rem;
+    padding: 0rem 1.4rem;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-main-bg);
+    background: var(--bg-list-main);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.linkme .linkme-detail > .main-btn .icon i{
+    margin-right: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+    .linkme-con{
+        margin: 1rem;
+    }
+}

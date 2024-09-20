@@ -1,0 +1,186 @@
+.web-header{
+    display: none;
+}
+.web-tablink{
+    display: none;
+}
+.web-con{
+    width: 100%;
+}
+.web-con, .web-con-body{
+    overflow: initial;
+}
+/* ==========================>  */
+.seemore-head{
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 20000000000000000000;
+    background: var(--sg-bglight);
+    border-bottom: 1px solid var(--sg-border-00);
+}
+.seemore-head .box{
+    height: 60px;
+}
+.seemore-head .icon{
+    margin: 0rem 0.8rem;
+    background: var(--sg-bgblack);
+}
+.seemore-head .icon i{
+    font-size: 1.5rem;
+}
+.seemore-head h2{
+    font-size: 1.3rem;
+    font-family: var(--sg-fontbrand);
+}
+.all-user{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.all-user li{
+    display: block;
+    margin: 0.8rem;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--sg-bglight);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.all-user li .user-box{
+    padding: 1rem;
+}
+.all-user li .head .profile{
+    width: 3.8rem;
+    height: 3.8rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    margin-left: 0rem;
+}
+.all-user li .head .list{
+    margin-right: 0.8rem;
+}
+.all-user li .head .list:nth-child(2){
+    margin-left: 0.8rem;
+}
+.all-user li .head h2{
+    text-indent: 1px;
+}
+.all-user li .head h2,
+.all-user li .head p,
+.all-user blockquote h2,
+.all-user blockquote p{
+    font-family: var(--sg-fontbrand);
+    font-size: 1.4rem;
+    color: var(--sg-main-bg);
+}
+.all-user li .head p{
+    font-size: 1rem;
+}
+.all-user li .head button,
+.all-user .foot button{
+    width: max-content;
+    padding: 0rem 0.9rem;
+    height: 2.2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    font-family: var(--sg-fontbrand);
+    color: var(--sg-bglight);
+    background: var(--sg-main-bg);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.all-user .foot form:last-child button.active::after,
+.all-user li .head button.active::after{
+    font-family: boxicons !important;
+    font-size: 1.05rem;
+    content: "\ea41";
+    margin-left: 0.2rem;
+}
+.all-user blockquote{
+    padding: 0.8rem 0rem;
+}
+.all-user blockquote h2{
+    font-size: 1.1rem;
+}
+.all-user blockquote p{
+    font-size: 0.9rem;
+}
+.all-user blockquote .about{
+    margin-top: 0.8rem;
+}
+.all-user .foot form:first-child button{
+    color: var(--sg-main-bg);
+    border: 1px solid var(--sg-main-bg);
+    background: none;
+}
+.all-user .foot form button{
+    display: none;
+    border-radius: 50rem;
+}
+@media only screen and (max-width: 690px){
+    .web-con{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .web-tablink{
+        display: block;
+    }
+}
+@media only screen and (max-width: 450px){
+    .all-user li .head button{
+        display: none;
+    }
+    .all-user .foot form:first-child{
+        visibility: hidden;
+    }
+    .all-user .foot form:last-child button{
+       display: flex;
+    }
+    .all-user .foot form button{
+        border-radius: 10px;
+    }
+}
+/* ================user activity ================== */
+.web-asdie .web-asdie-body-con{
+    margin: 0 auto;
+}
+.web-asdie{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    min-width: inherit;
+    min-height: initial;
+}
+.web-asdie-body-con{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.activity-body ul a{
+    display: block;
+    margin: 0.8rem;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--sg-bglight);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.activity-body ul li .txt p:last-child{
+    margin-top: 0.8rem;
+}
+/* ===================user post=====================  */
+.web-post{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.web-post ul .data_list{
+    margin: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
